@@ -159,4 +159,6 @@ if __name__ == '__main__':
     phone_orient = 0
     while True:
         steer = orient_to_steer(phone_orient, joystick_deadzone)
+        joystick_play(steer)
+        
     osc.stop()  # Stop the default socket
